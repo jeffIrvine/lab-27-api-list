@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { getCharacterList } from '../../../services/getCharacters.js';
 import CharacterList from './CharacterList.jsx';
-// import getSingleCharacter from '../../../services/getSingleCharacter';
 
 export default class AllCharacters extends Component {
   state = {
@@ -16,8 +15,6 @@ export default class AllCharacters extends Component {
   
   
   render() {
-    // const character = getSingleCharacter(2);
-    // console.log('-----------------', character);
     const { characters } = this.state;
 
     return (

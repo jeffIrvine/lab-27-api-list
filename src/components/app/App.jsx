@@ -1,11 +1,11 @@
 import React from 'react';
 import AllCharacters from '../app/characters/AllCharacters';
-import Character from '../app/characters/Character';
 import { 
   BrowserRouter as Router,
   Route,
   Switch
 } from 'react-router-dom';
+import SingleCharacter from './characters/SingleCharacter';
 
 
 
@@ -22,9 +22,9 @@ export default class App extends React.Component {
                 component = { AllCharacters }
               />
               <Route 
-                path="/details"
+                path="/details/:id"
                 exact
-                component = { Character }
+                component = { SingleCharacter }
               />
             </Switch>
           </Router>
